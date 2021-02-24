@@ -5,7 +5,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 var typed = new Typed('.type', {
     strings: ["Developer.",
               "Designer?",
-              "Sports Enthusiast."],
+              "Sports Fanatic."],
     // smartBackspace: true // Default value
     typeSpeed: 50,
     backSpeed: 50,
