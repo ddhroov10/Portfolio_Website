@@ -38,7 +38,13 @@ body, html{
    background-color: transparent;
 }
 
+.dropdown-menu {
+    background-color:var(--highlight-color);
+    
+}
+
 a:hover{
+    
     background-color:#030000;
     background-color: rgb(23, 9, 85);
 }

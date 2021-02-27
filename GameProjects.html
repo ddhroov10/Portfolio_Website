@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ---------- Head ---------- -->
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Title of the portfolio website-->
+    <title> MyPortfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<!-- ---------- Body ---------- -->
+
+<body>
+    <!-- ----------particles library --------- -->
+    <div id="particles-js"></div>
+
+    <!-- ---------- Navigation Bar ---------- -->
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand" href="#">Dhroov Goel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/AboutMe.html">AboutMe</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Projects
+                    </a>    
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-black" href="/GameProjects.html">Gaming Projects</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-black" href="/GeneralProjects.html">General Projects</a>
+                        
+                    
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Contact.html">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <div class="container h-100">
+        <div class="row  h-90 text-center justify-content-center align-items-center">
+            <div class="col-12 text-center " id="projects">
+                <h2>Gaming Projects</h2>
+            </div>
+            <div class="col-sm-4 ">
+                <div class="card card-flip h-100">
+
+                    <audio id="gameaudio1" src="ColorSwitchMusic.mp3"></audio>
+
+                    <div class="card-front text-black" onmouseover="PlayGameSound('gameaudio1',1)"
+                        onmouseout="StopGameSound('gameaudio1',1)" id="game_project1">
+
+                        <div class="card-body">
+                            <!-- <i class="fa fa-search fa-5x float-right"></i> -->
+                            <img class="rounded" src="game4.png" alt="Generic placeholder image" width="200"
+                                height="230" id="game1">
+
+                            <h3 class="card-title">COLOUR SWITCH</h3>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card-back bg-white" onmouseover="PlayGameSound('gameaudio1',1)"
+                        onmouseout="StopGameSound('gameaudio1',1)">
+                        <div class="card-body text-left">
+                            <h3 class="card-title text-center">DESCRITPTION</h3>
+                            <p class="card-text ">•Java Game modeling the popular mobile game using JavaFX</p>
+                            <p>•Used various controllers and AnimationTimer and implemented design interfaces on
+                                FXMLLoader</p>
+                            <p>•Team Size - 2</p>
+                            <div class="icons text-center">
+                                <a href="https://github.com/SakshatMali/ColorSwitchGame"> <i
+                                        class="fa fa-github fa-3x text-center" aria-hidden="true"></i> </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <audio id="gameaudio2" src="BallEnigmaMusic.mp3"></audio>
+                <div class="card card-flip h-100" onmouseover="PlayGameSound('gameaudio2',2)"
+                    onmouseout="StopGameSound('gameaudio2',2)" onmouseover="myFunction()" onmouseout="myFunction2()">
+
+
+
+                    <div class="card-front text-white" id="game_project2">
+                        <div class="card-body">
+                            <!-- <i class="fa fa-search-plus fa-5x float-top"></i> -->
+
+                            <img class="rounded" src="game2.png" alt="Generic placeholder image" width="300"
+                                height="230" id="game1">
+
+                            <h3 class="card-title">BALL ENIGMA</h3>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card-back bg-dark text-white" onmouseover="PlayGameSound('gameaudio2',2)"
+                        onmouseout="StopGameSound('gameaudio2',2)">
+                        <div class="card-body text-left">
+                            <h3 class="card-title text-center">DESCRITPTION</h3>
+                            <p class="card-text ">•A slight variation to popular game Bubble Trouble </p>
+                            <p>•Used Processing and Arduino</p>
+                            <p>•Team Size - 3</p>
+                            <div class="icons text-center">
+                                <a href="https://github.com/parth19069/Ball-Enigma"> <i
+                                        class="fa fa-github fa-3x text-center" aria-hidden="true"></i> </a>
+                                <a href="https://www.youtube.com/watch?v=4KC8kOB1hVw&feature=youtu.be"> <i
+                                        class="fa fa-youtube fa-3x text-center" aria-hidden="true"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card card-flip h-100" onmouseover="PlayGameSound('gameaudio3',3)"
+                    onmouseout="StopGameSound('gameaudio3',3)">
+
+                    <audio id="gameaudio3" src="RummyMusic.mp3"></audio>
+
+                    <div class="card-front text-black" id="game_project3">
+
+                        <div class="card-body">
+                            <!-- <i class="fa fa-arrow-circle-right fa-5x float-right"></i> -->
+                            <img class="rounded" src="game3.png" alt="Generic placeholder image" width="300"
+                                height="230" id="game1">
+
+                            <h3 class="card-title">INDIAN RUMMY</h3>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card-back bg-white" onmouseover="PlayGameSound('gameaudio3',3)"
+                        onmouseout="StopGameSound('gameaudio3',3)">
+
+                        <div class="card-body text-left">
+                            <h3 class="card-title text-center">DESCRITPTION</h3>
+                            <p class="card-text ">•Python game modeling the popular card game RUMMY </p>
+                            <p>•Used Pygame library to implement design interface.</p>
+                            <p>•Team Size - 1</p>
+                            <div class="icons text-center">
+                                <a href="https://github.com/ddhroov10/Portfolio_Website"> <i
+                                        class="fa fa-github fa-3x text-center" aria-hidden="true"></i> </a>
+                            </div>
+                            <!-- <a href="#" class="btn btn-outline-secondary">Action</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------Scripts------------------ -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+
+
+    
+
+</body>
+
+</html>
