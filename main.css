@@ -31,6 +31,7 @@
 body, html{
     height: 100vh;
     width: 100vw;
+    /* overflow: hidden; */
 }
 .navbar{
    /* background-color: #000000; */
@@ -62,6 +63,8 @@ h2{
 #projects{
     position: relative;  
     padding: 12% 0% 0% 0%;
+    margin-bottom: 5%; /* margin added as h-90 added for project adding */
+    color: #fff;
 }
 
 #game1, #game2{
@@ -75,8 +78,140 @@ h2{
     cursor:pointer;
 }
 
-.card-img-top {
+.card-flip > div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
     width: 100%;
-    height: 70vw;
-    object-fit: cover;
+    height: 100%;
+    margin: 0;
+    display: flex;
+  }
+  
+  .card-front {
+    transform: rotateY(0deg);
+  }
+
+  #game_project1{
+    background-color: rgb(255, 255, 255);
+
+  }
+  #game_project2{
+    background-color: rgb(9, 3, 29);
+    /* background-color: #000; */
+  }
+
+  #game_project3{
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+  }
+  
+  .card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+  }
+    
+  .card-flip:hover .card-back {
+    transform: rotateY(0deg);
+  }
+
+
+
+  /* useless code ------------ */
+  /* body{
+    background: #262626;
 }
+
+
+.team-area{
+padding: 60px 0;
+}
+
+.section-heading {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 65px;
+    font-family: bignoodletitling;
+    letter-spacing: 5px;
+}
+
+.team-area .card {
+border: none;
+background: #ffffff;
+}
+.img-area{
+width: 150px;
+height: 150px;
+display: inline-block;
+overflow: hidden;
+border-radius: 50%;
+}
+.team-single:hover .side-two {
+transform: rotateY(0deg);
+border-radius: .25rem;
+}
+
+.team-single:hover .side-one {
+transform: rotateY(180deg);
+}
+
+.content-area {
+transform: perspective(1000px);
+transition: 1s;
+transform-style: preserve-3d;
+position: relative;
+}
+
+.side-one {
+position: relative;
+transform: rotateY(0deg);
+z-index: 2;
+margin-bottom: 30px;
+}
+
+.side-two {
+position: absolute;
+top: 0;
+left: 0;
+background: white;
+transform: rotateY(-180deg);
+}
+
+.side-one,
+.side-two {
+backface-visibility: hidden;
+transition: 1s;
+transform-style: preserve-3d;
+}
+
+.side-one .card,
+.side-two .card {
+min-height: 312px;
+}
+
+.side-two .card a {
+font-size: 18px;
+color: brown !important;
+}
+
+h4 {
+color:brown !important;
+font-family: BigNoodleTitling;
+letter-spacing: 5px;
+font-size: 25px;
+}
+p{
+font-family: Merienda;
+}
+
+.side-one .card .card-body img {
+width: 120px;
+height: 120px;
+border-radius: 50%;
+} */
