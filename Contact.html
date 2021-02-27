@@ -65,76 +65,96 @@
 
                     <audio id="gameaudio1" src="ColorSwitchMusic.mp3"></audio>
 
-                    <div class="card-front text-black" id = "game_project1">
+                    <div class="card-front text-black" onmouseover="PlayGameSound('gameaudio1',1)"
+                        onmouseout="StopGameSound('gameaudio1',1)" id="game_project1">
+
                         <div class="card-body">
                             <!-- <i class="fa fa-search fa-5x float-right"></i> -->
-                            <img class="rounded" src="game4.png" onmouseover="document.getElementById('gameaudio1').play()"
-                            onmouseout="document.getElementById('gameaudio1').pause()" alt="Generic placeholder image" width="200"
-                            height="230" id="game1">
+                            <img class="rounded" src="game4.png" alt="Generic placeholder image" width="200"
+                                height="230" id="game1">
 
                             <h3 class="card-title">COLOUR SWITCH</h3>
-                            <p class="card-text">Java Game modeling the popular mobile game using JavaFX</p>
+                            <p class="card-text"></p>
                         </div>
                     </div>
-                    <div class="card-back bg-white" onmouseover="document.getElementById('gameaudio1').play()"
-                    onmouseout="document.getElementById('gameaudio1').pause()">
-                        <div class="card-body">
-                            <h3 class="card-title">Back</h3>
-                            <p class="card-text">Text at back</p>
-                            <a href="#" class="btn btn-outline-secondary">Action</a>
+                    <div class="card-back bg-white" onmouseover="PlayGameSound('gameaudio1',1)"
+                        onmouseout="StopGameSound('gameaudio1',1)">
+                        <div class="card-body text-left">
+                            <h3 class="card-title text-center">DESCRITPTION</h3>
+                            <p class="card-text ">•Java Game modeling the popular mobile game using JavaFX</p>
+                            <p>•Used various controllers and AnimationTimer and implemented design interfaces on FXMLLoader</p>
+                            <p>•Team Size - 2</p>
+                            <div class="icons text-center">
+                                <a href="https://github.com/SakshatMali/ColorSwitchGame"> <i class="fa fa-github fa-5x text-center" aria-hidden="true" ></i> </a>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="card card-flip h-100">
+                <audio id="gameaudio2" src="BallEnigmaMusic.mp3"></audio>
+                <div class="card card-flip h-100" onmouseover="PlayGameSound('gameaudio2',2)"
+                onmouseout="StopGameSound('gameaudio2',2)" onmouseover="myFunction()" onmouseout="myFunction2()">
 
-                    <audio id="gameaudio2" src="BallEnigmaMusic.mp3"></audio>
+                    
 
-                    <div class="card-front text-white" id = "game_project2">
+                    <div class="card-front text-white"  id="game_project2">
                         <div class="card-body">
                             <!-- <i class="fa fa-search-plus fa-5x float-top"></i> -->
-                           
-                            <img class="rounded" src="game2.png" onmouseover="document.getElementById('gameaudio2').play()"
-                            onmouseout="document.getElementById('gameaudio2').pause()" alt="Generic placeholder image" width="300"
-                            height="230" id="game1">
+
+                            <img class="rounded" src="game2.png" alt="Generic placeholder image" width="300"
+                                height="230" id="game1">
 
                             <h3 class="card-title">BALL ENIGMA</h3>
-                            <p class="card-text">A slight variation to popular game Bubble Trouble using Processing and Arduino</p>
+                            <p class="card-text"></p>
                         </div>
                     </div>
-                    <div class="card-back bg-dark text-white" onmouseover="document.getElementById('gameaudio2').play()"
-                    onmouseout="document.getElementById('gameaudio2').pause()">
-                        <div class="card-body">
-                            <h3 class="card-title">Back #2</h3>
-                            <p class="card-text">Suprise this one has content on the back!</p>
-                            <a href="#" class="btn btn-outline-secondary">Action</a>
+                    <div class="card-back bg-dark text-white" onmouseover="PlayGameSound('gameaudio2',2)"
+                        onmouseout="StopGameSound('gameaudio2',2)">
+                        <div class="card-body text-left">
+                            <h3 class="card-title text-center">DESCRITPTION</h3>
+                            <p class="card-text ">•A slight variation to popular game Bubble Trouble </p>
+                            <p>•Used Processing and Arduino</p>
+                            <p>•Team Size - 3</p>
+                            <div class="icons text-center">
+                                <a href="https://github.com/ddhroov10/Portfolio_Website"> <i class="fa fa-github fa-3x text-center" aria-hidden="true" ></i> </a>
+                                <a href="https://www.youtube.com/watch?v=4KC8kOB1hVw&list=LL&index=25&t=24s"> <i class="fa fa-youtube fa-3x text-center" aria-hidden="true"></i></a>
+                            </div>
+                
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="card card-flip h-100">
+                <div class="card card-flip h-100" onmouseover="PlayGameSound('gameaudio3',3)"
+                onmouseout="StopGameSound('gameaudio3',3)">
 
                     <audio id="gameaudio3" src="RummyMusic.mp3"></audio>
 
-                    <div class="card-front text-black" id = "game_project3">
+                    <div class="card-front text-black" id="game_project3">
+
                         <div class="card-body">
                             <!-- <i class="fa fa-arrow-circle-right fa-5x float-right"></i> -->
-                            <img class="rounded" src="game3.png" onmouseover="document.getElementById('gameaudio3').play()"
-                            onmouseout="document.getElementById('gameaudio3').pause()" alt="Generic placeholder image" width="300"
-                            height="230" id="game1">
+                            <img class="rounded" src="game3.png" alt="Generic placeholder image" width="300"
+                                height="230" id="game1">
 
                             <h3 class="card-title">INDIAN RUMMY</h3>
-                            <p class="card-text">Python game modeling the popular card game RUMMY</p>
+                            <p class="card-text"></p>
                         </div>
                     </div>
-                    <div class="card-back bg-white" onmouseover="document.getElementById('gameaudio3').play()"
-                    onmouseout="document.getElementById('gameaudio3').pause()">
-                        <div class="card-body text-primary">
-                            <h3 class="card-title">Wow! #3</h3>
-                            <p class="card-text">Suprise this one has content on the back!</p>
-                            <a href="#" class="btn btn-outline-primary">Action</a>
+                    <div class="card-back bg-white" onmouseover="PlayGameSound('gameaudio3',3)"
+                        onmouseout="StopGameSound('gameaudio3',3)">
+
+                        <div class="card-body text-left">
+                            <h3 class="card-title text-center">DESCRITPTION</h3>
+                            <p class="card-text ">•Python game modeling the popular card game RUMMY </p>
+                            <p>•Used Pygame library to implement design interface.</p>
+                            <p>•Team Size - 1</p>
+                            <div class="icons text-center">
+                                <a href="https://github.com/ddhroov10/Portfolio_Website"> <i class="fa fa-github fa-5x text-center" aria-hidden="true" ></i> </a>
+                            </div>
+                            <!-- <a href="#" class="btn btn-outline-secondary">Action</a> -->
                         </div>
                     </div>
                 </div>
