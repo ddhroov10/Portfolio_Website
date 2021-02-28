@@ -19,7 +19,7 @@
         var(--backgroundtop-color),
         var(--backgroundbottom-color)
     );
-    background-image: url('backgroundimg5.jpg');
+    background-image: url('Images/backgroundimg5.jpg');
     /* opacity: 0.8; */
     background-repeat: no-repeat;
     background-attachment: fixed;
