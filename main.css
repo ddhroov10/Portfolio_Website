@@ -104,7 +104,7 @@ a:hover{
     transition: linear 0.3s;
 }
 
-#Home, #AboutMe{
+#Home, #AboutMe, #GameProjects, #GeneralProjects, #Contact{
     position: relative;
 }
 
@@ -301,3 +301,7 @@ div div div div:hover{
     transform: rotateY(0deg);
 }
 
+#heart{
+    color: red;
+	font-size: 150%;
+}
