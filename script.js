@@ -3,9 +3,9 @@ particlesJS.load('particles-js', 'particles.json', function() {
   });
   
 var typed = new Typed('.type', {
-    strings: ["Developer.",
+    strings: ["Developer!",
               "Designer?",
-              "Sports Fanatic."],
+              "Sports Fanatic!"],
     // smartBackspace: true // Default value
     typeSpeed: 50,
     backSpeed: 50,
@@ -18,13 +18,13 @@ function PlayGameSound(soundobj, int_num) {
   thissound.play();
   
   if(int_num == 1){
-    document.getElementById("game_project1").style.marginTop = "100px";
+    document.getElementById("game_project1").style.transform = "scale(1.1,1.1)";
   }
   if(int_num == 2){
-    document.getElementById("game_project2").style.marginTop = "100px";
+    document.getElementById("game_project2").style.transform = "scale(1.1,1.1)";
   }
   if(int_num == 3){
-    document.getElementById("game_project3").style.marginTop = "100px";
+    document.getElementById("game_project3").style.transform = "scale(1.1,1.1)";
   }
   
 }
@@ -33,13 +33,14 @@ function StopGameSound(soundobj, int_num) {
   var thissound=document.getElementById(soundobj);
   thissound.pause();
   if(int_num == 1){
-    document.getElementById("game_project1").style.marginTop = "0px";
+    document.getElementById("game_project1").style.transform = "scale(1,1)";
   }
   if(int_num == 2){
-    document.getElementById("game_project2").style.marginTop = "0px";
+    document.getElementById("game_project2").style.transform = "scale(1,1)";
   }
   if(int_num == 3){
-    document.getElementById("game_project3").style.marginTop = "0px";
+    document.getElementById("game_project3").style.transform = "scale(1,1)";
   }
   // thissound.currentTime = 0;
 }
+
