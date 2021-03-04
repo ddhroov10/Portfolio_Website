@@ -28,45 +28,54 @@
 
     <!-- ---------- Navigation Bar ---------- -->
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <a class="navbar-brand" href="#">Dhroov<span class="name">Goel </span> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark mx-2">
+            <a class="navbar-brand" href="#">Dhroov<span class="name">Goel </span> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/AboutMe.html">AboutMe</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Projects
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item text-black" href="/GameProjects.html">Gaming Projects</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item text-black" href="/GeneralProjects.html">General Projects</a>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="/AboutMe.html">AboutMe</a> -->
+                        <a class="nav-link" href="#AboutMe">AboutMe</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Projects
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!-- <a class="dropdown-item text-black" href="/GameProjects.html">Gaming Projects</a> -->
+                            <a class="dropdown-item text-black" href="#GameProjects">Gaming Projects</a>
+
+                            <div class="dropdown-divider"></div>
+
+                            <!-- <a class="dropdown-item text-black" href="/GeneralProjects.html">General Projects</a> -->
+                            <a class="dropdown-item text-black" href="#GeneralProjects">General Projects</a>
 
 
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Contact.html">Contact</a>
-                </li>
-            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="/Contact.html">Contact</a> -->
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
 
-        </div>
-    </nav>
+            </div>
+        </nav>
+    </div>
+
 
     <!-- ----------Home - Typed JS----------------- -->
 
-    <div class="container h-100">
+    <div class="container h-100" id="Home">
 
         <div class="row h-90 text-center justify-content-center align-items-center">
             <div class="col-12 text-center " id="projects">
@@ -82,13 +91,14 @@
             </div>
             <div class="row icon col-xs-12">
                 <div class="col-sm-3" id="github">
-                    <a class="tooltip-test text-decoration-none" title="Github" href="https://github.com/ddhroov10"  target="_blank">
-                         <i class="fa fa-github fa-2x text-center icon-cog1" ></i></a>
+                    <a class="tooltip-test text-decoration-none" title="Github" href="https://github.com/ddhroov10"
+                        target="_blank">
+                        <i class="fa fa-github fa-2x text-center icon-cog1"></i></a>
                 </div>
                 <div class="col-sm-3" id="codeforces">
                     <a class="tooltip-test text-decoration-none" title="Codeforces"
-                        href="https://codeforces.com/profile/ddhroov10"> <i class="fa fa-code fa-2x text-center icon-cog2"
-                            aria-hidden="true"></i></a>
+                        href="https://codeforces.com/profile/ddhroov10"> <i
+                            class="fa fa-code fa-2x text-center icon-cog2" aria-hidden="true"></i></a>
                 </div>
                 <div class="col-sm-3" id="linkedin">
                     <a class="tooltip-test text-decoration-none" title="Linkedin"
@@ -97,14 +107,340 @@
                 </div>
                 <div class="col-sm-3" id="codechef">
                     <a class="tooltip-test text-decoration-none" title="Codechef"
-                        href="https://www.codechef.com/users/ddhroov10"> <i class="fa fa-terminal fa-2x text-center icon-cog2"
-                            aria-hidden="true"></i></a>
+                        href="https://www.codechef.com/users/ddhroov10"> <i
+                            class="fa fa-terminal fa-2x text-center icon-cog2" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
     </div>
 
 
+    <div class="container h-100" id="AboutMe">
+        <div class="row  h-90 text-center align-items-center">
+            <div class="col-12 text-center " id="projects">
+                <h2>About<span class="name">Me </span></h2>
+            </div>
+
+
+
+            <div class="col-md-4 col-sm-12 mr-3">
+                <div class="stack">
+                    <img src="Images/aboutmephoto.jpg" alt="about image" id="aboutmephoto">
+                    <!--edit image-->
+                </div>
+            </div>
+
+            <div class="col-sm-7 text-white text-left mt-2">
+                <h3>
+                    I am currently a sophomore at IIIT-D pursuing BTech in Computer Science and Design. I love to build
+                    and learn new things at every moment.
+                    I also love playing sports and listening to music.
+                    <br></br>
+                    Here are some of my Tech. learnings -
+                    <div class="row ml-5">
+                        <div class="Tech mt-3 col-sm-4">
+                            •C++
+                        </div>
+                        <div class="Tech mt-3 col-sm-4">
+                            •Java
+                        </div>
+                        <div class="Tech mt-3 col-sm-4">
+                            •Python
+                        </div>
+                    </div>
+                    <div class="row ml-5">
+                        <div class="Tech mt-3 col-sm-4">
+                            •HTML
+                        </div>
+                        <div class="Tech mt-3 col-sm-4">
+                            •CSS
+                        </div>
+                        <div class="Tech mt-3 col-sm-4">
+                            •JavaScript
+                        </div>
+                    </div>
+                    <div class="row ml-5">
+                        <div class="Tech mt-3 col-sm-4">
+                            •Bootstrap
+                        </div>
+                        <div class="Tech mt-3 col-sm-4">
+                            •Illustrator
+                        </div>
+                        <div class="Tech mt-3 col-sm-4">
+                            •Unity
+                        </div>
+                    </div>
+
+                    <h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container h-100" id="GameProjects">
+        <div class="row  h-90 text-center justify-content-center align-items-center">
+            <div class="col-12 text-center " id="projects">
+                <h2>Gaming<span class="name">Projects </span></h2>
+            </div>
+
+            <div class="col-sm-4">
+                <audio id="gameaudio2" src="Music/BallEnigmaMusic.mp3"></audio>
+                <div class="card card-flip h-100 my-4">
+
+
+
+                    <div class="card-front text-black" onmouseover="PlayGameSound('gameaudio2',1)"
+                        onmouseout="StopGameSound('gameaudio2',1)" id="game_project1">
+                        <div class="card-body">
+                            <!-- <i class="fa fa-search-plus fa-5x float-top"></i> -->
+
+                            <img class="rounded" src="Images/game1.png" alt="BALL ENIGMA" width="300" height="230"
+                                id="game1_photo">
+
+                            <h3 class="card-title">BALL ENIGMA</h3>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card-back text-white" onmouseover="PlayGameSound('gameaudio2',1)"
+                        onmouseout="StopGameSound('gameaudio2',1)" id="game_card1">
+                        <div class="card-body text-left">
+                            <h3 class="card-title text-center"><span class="DESCRIPTION1">DESCRIPTION</span></h3>
+                            <p class="card-text ">•A slight variation to popular game Bubble Trouble </p>
+                            <p class="card-text">•Used Processing and Arduino</p>
+                            <p class="card-text">•Team Size - 3</p>
+                            <div class="text-center">
+                                <a href="https://github.com/parth19069/Ball-Enigma" target="_blank"> <i
+                                        class="fa fa-github fa-2x text-center icon-cog1 ml-4" id="github"></i> </a>
+                                <a href="https://www.youtube.com/watch?v=4KC8kOB1hVw&feature=youtu.be" target="_blank">
+                                    <i class="fa fa-youtube fa-2x text-center icon-cog1" id="youtube"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 ">
+                <audio id="gameaudio1" src="Music/ColorSwitchMusic.mp3"></audio>
+                <div class="card card-flip h-100 my-4">
+
+
+
+                    <div class="card-front text-black" onmouseover="PlayGameSound('gameaudio1',2)"
+                        onmouseout="StopGameSound('gameaudio1',2)" id="game_project2">
+
+                        <div class="card-body">
+                            <!-- <i class="fa fa-search fa-5x float-right"></i> -->
+                            <img class="rounded" src="Images/game2.png" alt="COLOR SWITCH" width="200" height="230"
+                                id="game2_photo">
+
+                            <h3 class="card-title">COLOR SWITCH</h3>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card-back text-white" onmouseover="PlayGameSound('gameaudio1',2)"
+                        onmouseout="StopGameSound('gameaudio1',2)" id="game_card2">
+                        <div class="card-body text-left">
+                            <h3 class="card-title text-center"><span class="DESCRIPTION2">DESCRIPTION</span></h3>
+                            <p class="card-text ">•Java Game modelling the popular mobile game using JavaFX</p>
+                            <p class="card-text ">•Used various controllers and AnimationTimer and implemented design
+                                interfaces on
+                                FXMLLoader</p>
+                            <p class="card-text">•Team Size - 2</p>
+                            <div class="icons text-center" id="github">
+                                <a class="tooltip-test text-decoration-none"
+                                    href="https://github.com/SakshatMali/ColorSwitchGame" target="_blank"> <i
+                                        class="fa fa-github fa-2x text-center icon-cog1"></i> </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <audio id="gameaudio3" src="Music/RummyMusic.mp3"></audio>
+                <div class="card card-flip h-100 my-4">
+
+
+
+                    <div class="card-front text-black" onmouseover="PlayGameSound('gameaudio3',3)"
+                        onmouseout="StopGameSound('gameaudio3',3)" id="game_project3">
+
+                        <div class="card-body">
+                            <!-- <i class="fa fa-arrow-circle-right fa-5x float-right"></i> -->
+                            <img class="rounded" src="Images/game3.png" alt="RUMMY" width="300" height="230"
+                                id="game3_photo">
+
+                            <h3 class="card-title">INDIAN RUMMY</h3>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card-back text-white" onmouseover="PlayGameSound('gameaudio3',3)"
+                        onmouseout="StopGameSound('gameaudio3',3)" id="game_card3">
+
+                        <div class="card-body text-left">
+                            <h3 class="card-title text-center"><span class="DESCRIPTION3">DESCRIPTION</span></h3>
+                            <p class="card-text ">•Python game modelling the popular card game RUMMY. </p>
+                            <p class="card-text ">•Used Pygame library to implement design interface.</p>
+                            <p class="card-text ">•Team Size - 1</p>
+                            <div class="text-center" id="github">
+                                <a class="tooltip-test text-decoration-none"
+                                    href="https://github.com/ddhroov10/Portfolio_Website" target="_blank"> <i
+                                        class="fa fa-github fa-2x text-center icon-cog1"></i> </a>
+                            </div>
+                            <!-- <a href="#" class="btn btn-outline-secondary">Action</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container h-100" id="GeneralProjects">
+        <div class="row  h-90 text-center justify-content-center align-items-center">
+            <div class="col-12 text-center " id="projects">
+                <h2>General<span class="name">Projects</span></h2>
+            </div>
+            <div class="col-sm-4 ">
+                <div class="card card-flip h-100 my-4">
+
+                    <div class="card-front text-white" id="game_project1">
+
+                        <div class="card-body">
+                            <!-- <i class="fa fa-search fa-5x float-right"></i> -->
+                            <img class="rounded" src="Images/game2.png" alt="COMMAND LINE SHELL" width="200"
+                                height="230" id="game1">
+
+                            <h3 class="card-title">COMMAND LINE SHELL</h3>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card-back text-white" id=game_card1>
+                        <div class="card-body text-left">
+                            <h3 class="card-title text-center"><span class="DESCRIPTION1">DESCRIPTION</span> </h3>
+                            <p class="card-text">•Built a Linux shell using the C programming language</p>
+                            <p class="card-text">•Implemented Internal and External commands using System Call.</p>
+                            <p class="card-text">•Team Size - 1</p>
+                            <div class="icons text-center" id="github">
+                                <a href="https://github.com/SakshatMali/ColorSwitchGame" target="_blank"> <i
+                                        class="fa fa-github fa-3x text-center icon-cog1" aria-hidden="true"></i> </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <audio id="gameaudio2" src="BallEnigmaMusic.mp3"></audio>
+                <div class="card card-flip h-100 my-4">
+
+
+
+                    <div class="card-front text-white" id="game_project2">
+                        <div class="card-body">
+
+                            <h3 class="card-title">YET TO COME</h3>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card-back bg-dark text-white">
+                        <div class="card-body text-left">
+                            <h3 class="card-title text-center">DESCRIPTION</h3>
+                            <p class="card-text ">•Wait for it </p>
+                            <div class="icons text-center">
+                                <a href=""> <i
+                                        class="fa fa-github fa-3x text-center" aria-hidden="true"></i> </a>
+                                <a href=""> <i
+                                        class="fa fa-youtube fa-3x text-center" aria-hidden="true"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card card-flip h-100 my-4">
+
+                    <audio id="gameaudio3" src="RummyMusic.mp3"></audio>
+
+                    <div class="card-front text-white" id="game_project3">
+
+                        <div class="card-body">
+
+                            <h3 class="card-title">???</h3>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card-back bg-white">
+
+                        <div class="card-body text-left">
+                            <h3 class="card-title text-center">DESCRIPTION</h3>
+                            <p class="card-text ">•JS website or game </p>
+                            <div class="icons text-center">
+                                <a href=""> <i
+                                        class="fa fa-github fa-3x text-center" aria-hidden="true"></i> </a>
+                            </div>
+                            <!-- <a href="#" class="btn btn-outline-secondary">Action</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container h-100" id="Contact">
+        <div class="row  h-90 text-center justify-content-center text-white">
+
+            <div class="col-12 text-center " id="projects">
+                <h2>Contact<span class="name">Form</span></h2>
+            </div>
+
+            <div class="col-md-4 col-sm-12 mr-3 text-left">
+
+                <i class="fa fa-map-marker "></i>
+                <h3> <span class="DESCRIPTION1"> Address</span></h3>
+                <p>Delhi, India</p>
+
+                <i class="fa fa-phone"></i>
+                <h3><span class="DESCRIPTION1"> Contact Number</span></h3>
+                <p>+91-9205532623</p>
+
+                <i class="fa fa-envelope"></i>
+                <h3><span class="DESCRIPTION1"> Email Address</span></h3>
+                <p>dhroov19303@iiitd.ac.in</p>
+
+            </div>
+
+
+            <div class="col-sm-7 text-white text-left ">
+
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea class="form-control" rows="7"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-block" style="background-color: cyan">Send</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
     <!-- ----------Scripts------------------ -->
 
