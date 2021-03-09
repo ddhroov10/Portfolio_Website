@@ -186,6 +186,10 @@ h2{
     background-color:#000000;
 }
 
+#general_card1,#general_card2{
+    background-color:#000000;
+}
+
 .DESCRIPTION1, .DESCRIPTION3{
     color:cyan;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -279,6 +283,10 @@ div div div div:hover{
     background-color: rgb(0, 0, 29);
     background-color: rgb(29, 0, 0); 
     background-color: rgb(255, 255, 255); 
+}
+
+#general_project1,#general_project2, #general_project3{
+    background-color: rgb(255, 255, 255);
 }
   
 

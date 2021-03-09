@@ -29,7 +29,12 @@ function PlayGameSound(soundobj, int_num) {
   if (int_num == 3) {
     document.getElementById("game_project3").style.transform = "scale(1.08,1.08)";
   }
-
+  if (int_num == 4) {
+    document.getElementById("general_project1").style.transform = "scale(1.08,1.08)";
+  }
+  if (int_num == 5) {
+    document.getElementById("general_project2").style.transform = "scale(1.08,1.08)";
+  }
 }
 
 function StopGameSound(soundobj, int_num) {
@@ -46,6 +51,12 @@ function StopGameSound(soundobj, int_num) {
   }
   if (int_num == 3) {
     document.getElementById("game_project3").style.transform = "scale(1,1)";
+  }
+  if (int_num == 4) {
+    document.getElementById("general_project1").style.transform = "scale(1,1)";
+  }
+  if (int_num == 5) {
+    document.getElementById("general_project2").style.transform = "scale(1,1)";
   }
   // thissound.currentTime = 0;
 }
